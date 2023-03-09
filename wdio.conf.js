@@ -9,9 +9,10 @@ exports.config = {
     maxInstances: 10,
     capabilities: [{
      maxInstances: 5,
-        browserName: 'chrome',
-        port: 4444,
-        acceptInsecureCerts: true
+     browserName: 'chrome',
+     port: 4444,
+     acceptInsecureCerts: true,
+     args: ['--headless', '--disable-gpu', '--disable-dev-shm-usage']
     }],
 
     logLevel: 'error',
