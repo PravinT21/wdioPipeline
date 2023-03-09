@@ -12,7 +12,9 @@ exports.config = {
      browserName: 'chrome',
      port: 4444,
      acceptInsecureCerts: true,
+        'goog:chromeOptions':{
      args: ['--headless', '--disable-gpu', '--disable-dev-shm-usage']
+        },
     }],
 
     logLevel: 'error',
